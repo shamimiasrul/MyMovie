@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>MyMovie App</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <h1>🎬 MyMovie Search & Planner</h1>
+  
+    <div class="search-box">
+        <input type="text" id="movieInput" placeholder="Enter movie title (e.g. Dune)">
+        <button id="searchBtn">🔍 Search Movie</button>
+    </div>
+    
+    <div id="result" style="display:none;"></div>
+    
+    <div id="suggestionBox" style="margin-top: 15px; font-weight: bold; color: #004d40;"></div>
+
+    <div class="category-section" style="margin-top: 20px;">
+        <p style="color: #cbd5e1; font-weight: bold; margin-bottom: 8px;">Suggest Movies by Category:</p>
+        <div style="display: flex; gap: 8px; flex-wrap: wrap;">
+            <button class="genre-filter-btn" data-query="Action">Action</button>
+            <button class="genre-filter-btn" data-query="Sci-Fi">Sci-Fi</button>
+            <button class="genre-filter-btn" data-query="Comedy">Comedy</button>
+            <button class="genre-filter-btn" data-query="Horror">Horror</button>
+            <button class="genre-filter-btn" data-query="Fantasy">Fantasy</button>
+            <button class="genre-filter-btn" data-query="Animation">Animation</button>
+        </div>
+        <div id="categoryResults"></div>
+    </div>
+
+    <br><br>
+    <button id="watchlistBtn" style="display:none;">📝 Open Watchlist Manager</button>
+
+    <script src="index.js"></script>
+</body>
+</html>
